@@ -1,0 +1,109 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f4f4f4;
+color:#333;
+}
+
+header{
+background:#222;
+color:white;
+text-align:center;
+padding:60px;
+}
+
+header h1{
+font-size:40px;
+}
+
+header p{
+margin:15px 0;
+}
+
+.btn{
+display:inline-block;
+padding:10px 20px;
+background:#00b894;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+section{
+padding:50px;
+}
+
+#about{
+display:flex;
+align-items:center;
+gap:30px;
+}
+
+#about img{
+width:220px;
+border-radius:50%;
+}
+
+.skills h2,
+.projects h2,
+.contact h2{
+text-align:center;
+margin-bottom:30px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+text-align:center;
+border-radius:10px;
+box-shadow:0 5px 10px rgba(0,0,0,.1);
+}
+
+.project{
+background:white;
+padding:20px;
+margin:20px 0;
+border-radius:10px;
+box-shadow:0 5px 10px rgba(0,0,0,.1);
+}
+
+.contact{
+text-align:center;
+}
+
+button{
+padding:10px 20px;
+background:#222;
+color:white;
+border:none;
+cursor:pointer;
+margin-top:20px;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+@media(max-width:768px){
+
+#about{
+flex-direction:column;
+text-align:center;
+}
+
+}
