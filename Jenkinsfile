@@ -18,7 +18,7 @@ pipeline {
         stage('Docker Build') {
             steps {
                 sh '''
-                rsync -av --delete ./ root@192.168.213.130:/var/lib/docker/volumes/apachevol/_data
+                rsync -av --delete ./ root@192.168.148.131:/var/lib/docker/volumes/apachevol/_data
                 '''
             }
         }
@@ -26,7 +26,7 @@ pipeline {
         stage('verify deployment') {
             steps {
                 sh '''
-                curl -f http://192.168.213.130:8090
+                curl -f http://192.168.148.131:8090
                 '''
             }
         }
