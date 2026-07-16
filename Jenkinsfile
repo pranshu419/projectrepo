@@ -18,7 +18,7 @@ pipeline {
         stage('Docker Build') {
             steps {
                 sh '''
-                rsync -av --delete ./ root@192.168.148.131:/usr/lib/docker/volumes/apachevol/_data
+                rsync -av --delete ./ root@192.168.148.131:/var/lib/docker/volumes/apachevol/_data
                 '''
             }
         }
